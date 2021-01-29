@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <title>Web Components - 一款面向未来的UI组件库</title>
+  <meta name="keywords" content="Web Components,wcui,yutent,bytedo, anot, avalon, vue, react, angular, js, jquery">
+  <meta name="description" content="Web Components - 一款面向未来的UI组件库">
+  <link href="//unpkg-dev.yutent.top/@bytedo/wcui/dist/css/reset-basic.css" rel="stylesheet">
+  <link href="./assets/css/app.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="app" anot="app">
+  <header class="topbar noselect">
+    <div class="logo">
+      <img src="./assets/img/logo.svg" alt="Web Components">
+      <span>Web Components</span>
+    </div>
+
+    <nav class="menu">
+      <a class="active" href="./">主页</a>
+      <a href="./doc.html">文档</a>
+      <a target="_blank" href="https://github.com/bytedo/wcui"><img class="github" src="./assets/img/github.svg" alt="Web Components"></a>
+    </nav>
+  </header>
+
+  <banner class="banner flex-ac">
+    <div class="wrapper flex-ac">
+      <h1>轻量级模块化组件库</h1>
+      <cite>一款基于Web Components, 面向未来的桌面UI组件库</cite>
+      <cite>不挑框架, 可无缝适配React, Angular, Avalon, Vue, jQuery...</cite>
+      <cite>网站快速成型工具</cite>
+    </div>
+  </banner>
+
+  <div class="colorful flex-ac">
+    <div class="wrapper flex-ac">
+      <header class="title">- 主题配色 -</header>
+      <section>
+        <ul class="blue">
+          <li></li><li></li><li></li>
+        </ul>
+        <ul class="teal">
+          <li></li><li></li><li></li>
+        </ul>
+        <ul class="green">
+          <li></li><li></li><li></li>
+        </ul>
+        <ul class="red">
+          <li></li><li></li><li></li>
+        </ul>
+        <ul class="orange">
+          <li></li><li></li><li></li>
+        </ul>
+        <ul class="plain">
+          <li></li><li></li><li></li>
+        </ul>
+        <ul class="grey">
+          <li></li><li></li><li></li>
+        </ul>
+        <ul class="dark">
+          <li></li><li></li><li></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <div class="basic-demo flex-ac">
+    <div class="wrapper flex-ac">
+      <header class="title">Buttons</header>
+      <section>
+        <wc-button size="medium" type="primary">Primary Button</wc-button>
+        <wc-button size="medium" type="info">Info Button</wc-button>
+        <wc-button size="medium" type="success">Success Button</wc-button>
+        <wc-button size="medium" type="warning">Warning Button</wc-button>
+      </section>
+      <section>
+        <wc-button size="medium">Normal Button</wc-button>
+        <wc-button size="medium" type="default">Default Button</wc-button>
+        <wc-button size="medium" type="inverse">Inverse Button</wc-button>
+        <wc-button size="medium" type="danger">Danger Button</wc-button>
+      </section>
+      
+      <header class="title">Inputs</header>
+      <section>
+        <wc-input size="medium" placeholder="Normal Input"></wc-input>
+        <wc-input size="medium" placeholder="Success Input" type="success"></wc-input>
+        <wc-input size="medium" placeholder="Danger Input" type="danger"></wc-input>
+        <wc-input size="medium" placeholder="Disabled Input" disabled></wc-input>
+      </section>
+
+      <div class="more">
+        <a href="./doc.html">更多组件...</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="quick-start flex-ac">
+    <div class="wrapper">
+      <header class="title">- 快速开始 -</header>
+      <wc-code lang="html">
+
+<xmp>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>Examples</title>
+<script type="module">
+  import '//unpkg.yutent.top/@bytedo/wcui/dist/form/button.js'
+  import '//unpkg.yutent.top/@bytedo/wcui/dist/form/input.js'
+</script>
+</head>
+<body>
+  <wc-input placeholder="输入内容并回车"></wc-input>
+  <ol>
+    <li>
+      todo list...
+      <wc-button icon="trash" type="danger" size="mini" link @click="$remove">删除</wc-button>
+    </li>
+  </ol>
+</body>
+</html>
+</xmp>
+
+      </wc-code>
+
+      <div class="demo">
+        <section>
+          <wc-input placeholder="输入内容并回车" @submit="todoAppend"></wc-input>
+        </section>
+        <ol class="todo">
+          <li :for="i it in todo">
+            {{i + 1}}. {{it}}
+            <wc-button icon="trash" type="danger" size="mini" link @click="$remove">删除</wc-button>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="footer flex-ac">
+    <div class="wrapper flex-ac">
+      <section class="nav">
+        <a href="/">Bytedo首页</a> |
+        <a href="https://github.com/bytedo/wcui/blob/master/LICENSE" target="_blank">MIT 开源协议</a> |
+        <a href="//yutent.top" target="_blank">作者博客</a> |
+        <a href="https://github.com/bytedo/wcui" target="_blank">GitHub</a>
+      </section>
+      <section class="copyright">
+        Designed By Yutent, Powered By Yutent @2021
+      </section>
+    </div>
+  </footer>
+</div>
+
+
+<script type="module" src="./assets/js/app.js"></script>
+</body>
+</html>

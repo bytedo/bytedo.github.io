@@ -6,6 +6,7 @@
 
 import '//unpkg.yutent.top/anot/dist/anot.js'
 import fetch from '//unpkg.yutent.top/@bytedo/fetch/dist/next.js'
+import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/color/index.js'
 import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/form/button.js'
 // import '//dist.bytedo.org/wcui/dist/form/button.js'
 // import '//dist.bytedo.org/wcui/dist/markd/index.js'
@@ -30,7 +31,23 @@ Anot({
       id: base64(name),
       name
     })),
-    formWC: ['WC-BUTTON (按钮)'].map(name => ({ id: base64(name), name })),
+    formWC: [
+      'WC-BUTTON (按钮)',
+      'WC-LINK (超连接)',
+      'WC-INPUT (文本框)',
+      'WC-NUMBER (数字文本框)',
+      'WC-TEXTAREA (文本域)',
+      'WC-SELECT (选择框)',
+      'WC-SWITCH (开关)',
+      'WC-RADIO (单选框)',
+      'WC-CHECKBOX (复选框)',
+      'WC-STAR (评分条)',
+      'WC-SLIDER (滑块)',
+      'WC-COLOR (取色器)'
+    ].map(name => ({
+      id: base64(name),
+      name
+    })),
     docset: ''
   },
   mounted() {

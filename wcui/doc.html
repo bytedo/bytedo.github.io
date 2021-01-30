@@ -21,39 +21,54 @@
 
     <nav class="menu">
       <a href="./">主页</a>
-      <a class="active" href="./doc.html">文档</a>
+      <a class="active">文档</a>
       <a target="_blank" href="https://github.com/bytedo/wcui"><img class="github" src="./assets/img/github.svg" alt="Web Components"></a>
     </nav>
   </header>
 
   <main class="docset flex-ac">
 
-    <tree-box>
+    <wc-scroll class="tree-box noselect">
+      <dl class="chapters">
+        <dt class="title">
+          <a 
+            :for="it in base" 
+            :class="{a: id === it.id}" 
+            :href="'?' + it.id" :text="it.name">
+          </a>
+        </dt>
+        <dt class="title">表单组件</dt>
+        <dd class="subtitle">
+          <a 
+            :for="it in formWC" 
+            :class="{a: id === it.id}" 
+            :href="'?' + it.id" :text="it.name">
+          </a>
+        </dd>
+      </dl>
+    </wc-scroll>
 
-    </tree-box>
+    <wc-scroll class="content">
 
-    <content>
-
-      <div>
-  
-        还没写呢...
+      <div class="wrapper">
+        <wc-markd class="detail" :value="docset"></wc-markd>
       </div>
-    </content>
+      
+      <footer class="footer flex-ac">
+        <section class="nav">
+          <a href="/">Bytedo首页</a> |
+          <a href="https://github.com/bytedo/wcui/blob/master/LICENSE" target="_blank">MIT 开源协议</a> |
+          <a href="//yutent.top" target="_blank">作者博客</a> |
+          <a href="https://github.com/bytedo/wcui" target="_blank">GitHub</a>
+        </section>
+        <section class="copyright">
+          Designed By Yutent, Powered By Yutent @2021
+        </section>
+      </footer>
+    </wc-scroll>
+  
   </main>
   
-  <footer class="footer flex-ac">
-    <div class="wrapper flex-ac">
-      <section class="nav">
-        <a href="/">Bytedo首页</a> |
-        <a href="https://github.com/bytedo/wcui/blob/master/LICENSE" target="_blank">MIT 开源协议</a> |
-        <a href="//yutent.top" target="_blank">作者博客</a> |
-        <a href="https://github.com/bytedo/wcui" target="_blank">GitHub</a>
-      </section>
-      <section class="copyright">
-        Designed By Yutent, Powered By Yutent @2021
-      </section>
-    </div>
-  </footer>
 </div>
 
 

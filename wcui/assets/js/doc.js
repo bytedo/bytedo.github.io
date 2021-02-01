@@ -7,10 +7,10 @@
 import '//unpkg.yutent.top/anot/dist/anot.js'
 import fetch from '//unpkg.yutent.top/@bytedo/fetch/dist/next.js'
 import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/color/index.js'
-import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/form/index.js'
-import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/markd/index.js'
-// import '//dist.bytedo.org/wcui/dist/form/index.js'
-// import '//dist.bytedo.org/wcui/dist/markd/index.js'
+// import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/form/index.js'
+// import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/markd/index.js'
+import '//dist.bytedo.org/wcui/dist/form/index.js'
+import '//dist.bytedo.org/wcui/dist/markd/index.js'
 
 // 支持对中文的base64编码
 function base64(str) {

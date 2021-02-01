@@ -6,7 +6,7 @@
 <style>.flex,.flex-free { display:flex;align-items:center } .flex > *,.flex-free > *{margin:0 16px}.flex > *{flex:1}</style>
 
 <section class="flex-free">
-  <wc-link type="primary" disabled to="#foo">Primary</wc-link>
+  <wc-link type="primary">Primary</wc-link>
   <wc-link type="info">Info</wc-link>
   <wc-link type="success">Success</wc-link>
   <wc-link type="warning">Warning</wc-link>

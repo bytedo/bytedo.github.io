@@ -48,7 +48,7 @@
       </dl>
     </wc-scroll>
 
-    <wc-scroll class="content">
+    <wc-scroll class="content" ref="detail">
 
       <div class="wrapper">
         <wc-markd class="detail" :value="docset"></wc-markd>
@@ -66,8 +66,13 @@
         </section>
       </footer>
     </wc-scroll>
-  
   </main>
+
+  
+  <div class="navigator">
+    <a @click="navigator(0)"><wc-icon is="dbl-left"></wc-icon></a>
+    <a @click="navigator(-1)"><wc-icon is="dbl-left"></wc-icon></a>
+  </div>
   
 </div>
 

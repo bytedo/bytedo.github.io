@@ -7,10 +7,10 @@
 import '//unpkg.yutent.top/anot/dist/anot.js'
 import fetch from '//unpkg.yutent.top/@bytedo/fetch/dist/next.js'
 import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/color/index.js'
-import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/form/button.js'
-// import '//dist.bytedo.org/wcui/dist/form/button.js'
-// import '//dist.bytedo.org/wcui/dist/markd/index.js'
+import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/form/index.js'
 import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/markd/index.js'
+// import '//dist.bytedo.org/wcui/dist/form/index.js'
+// import '//dist.bytedo.org/wcui/dist/markd/index.js'
 
 // 支持对中文的base64编码
 function base64(str) {
@@ -61,12 +61,14 @@ Anot({
       fetch(`/wcui/docset/${id}.md`)
         .then(r => r.text())
         .then(txt => {
-          // console.log(markd(txt))
           this.docset = txt
         })
         .catch(e => {
           this.docset = '<h1>你要浏览的文档, 被外星人吃了...</h1>'
         })
+    },
+    navigator(act) {
+      this.$refs.detail.scrollTop = act === 0 ? 0 : Number.MAX_SAFE_INTEGER
     }
   }
 })

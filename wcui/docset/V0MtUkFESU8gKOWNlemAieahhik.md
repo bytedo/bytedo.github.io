@@ -63,10 +63,18 @@
 
 ### 完整APIs
 
+`<wc-radio>`
+
 |  属性  |  值类型  |   默认值   |     描述   |
 |  :-:  |   :-:   |   :-:   |     -   |
 |  type  |  String  |   无   |   按钮类型, 仅能决定按钮的颜色, 无额外作用, 可选值有: `primary、info、success、warning、danger`   |
 |  readonly  |   Boolean  | false   |  按钮的只读状态, 为true时, 点击无效 |
 |  disbaled  |   Boolean  | false   |  按钮的禁用状态, 为true时, 点击无效 |
-|  value  |   String  |  无   |  单选框的实际值(非显示内容), 单个使用时, 该值不会变化; 单选组的`value`值, 会根据选中的选项自动变化。 |
-|  checked  |   Boolean  |  false   |  单选框的选中状态。 (单选组没有这个属性)  |
+|  value  |   String  |  无   |  单选框的实际值(非显示内容), 该值不随选中状态而变化 |
+|  checked  |   Boolean  |  false   |  单选框的选中状态。 |
+
+`<wc-radio-group>`
+
+|  属性  |  值类型  |   默认值   |     描述   |
+|  :-:  |   :-:   |   :-:   |     -   |
+|  value  |   String  |  无   |  单选框组的实际值(非显示内容), 会根据选中的选项自动变化。 |

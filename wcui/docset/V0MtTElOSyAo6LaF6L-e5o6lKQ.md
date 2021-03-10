@@ -21,7 +21,7 @@
 
 ### 状态
 
-只有`disbaled`一种状态, `disbaled`下不能点击, 也无法跳转, 无法获取焦点。
+只有`disabled`一种状态, `disabled`下不能点击, 也无法跳转, 无法获取焦点。
 
 
 ```html
@@ -78,9 +78,9 @@
 
 |  属性  |  值类型  |   默认值   |     描述   |
 |  :-:  |   :-:   |   :-:   |     -   |
-|  type  |  String  |   无   |   按钮类型, 仅能决定按钮的颜色, 无额外作用, 可选值有: primary、info、success、warning、default、inverse、danger。 不设置时,继承父级的颜色定义   |
+|  type  |  String  |   无   |   仅能决定颜色, 无额外作用, 可选值有: `primary、info、success、warning、danger`。 不设置时,继承父级的颜色定义   |
 |  underline  |   无  |  无   |  设置是否一直显示下划线 |
-|  disbaled  |   Boolean  | false   |  按钮的禁用状态, 为true时, 按钮点击事件无效 |
-|  autofocus  |   无  |  无   |  让按钮自动获得焦点。 不需要赋值   |
+|  disbaled  |   Boolean  | false   |  链接的禁用状态, 为true时, 点击事件无效 |
+|  autofocus  |   无  |  无   |  让链接自动获得焦点。 不需要赋值   |
 |  to  |   String  |  无   |  跳转属性, 与原生A标签的`href`一致, 支持任何A标签支持的跳转  |
-|  lazy  |   Number  |  0   |  为按钮设置节流防抖, 单位毫秒, 设置一个大于0的值之后, 在指定毫秒之内, 无法多次触发点击事件  |
+|  lazy  |   Number  |  0   |  为链接设置节流防抖, 单位毫秒, 设置一个大于0的值之后, 在指定毫秒之内, 无法多次触发点击事件  |

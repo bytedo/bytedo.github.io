@@ -40,7 +40,7 @@
 </section>
 
 ### 状态
-按钮有2种状态, `loading` 和 `disbled`, 这2种状态下, 都不能点击, 也无法获取焦点。
+按钮有2种状态, `loading` 和 `disabled`, 这2种状态下, 都不能点击, 也无法获取焦点。
 
 ```html
 <wc-button loading>Loading Status</wc-button>

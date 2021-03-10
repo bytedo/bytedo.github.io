@@ -25,7 +25,7 @@
 
 
 ### 状态
-单选框, 有2种状态, `readonly` 和 `disbled`, 这2种状态下, 都不能点击。效果参考上面的基础例子。
+单选框, 有2种状态, `readonly` 和 `disabled`, 这2种状态下, 都不能点击。效果参考上面的基础例子。
 
 ```html
 <wc-radio readonly>Readonly Radio</wc-radio>
@@ -67,9 +67,9 @@
 
 |  属性  |  值类型  |   默认值   |     描述   |
 |  :-:  |   :-:   |   :-:   |     -   |
-|  type  |  String  |   无   |   按钮类型, 仅能决定按钮的颜色, 无额外作用, 可选值有: `primary、info、success、warning、danger`   |
-|  readonly  |   Boolean  | false   |  按钮的只读状态, 为true时, 点击无效 |
-|  disbaled  |   Boolean  | false   |  按钮的禁用状态, 为true时, 点击无效 |
+|  type  |  String  |   无   |   单选框类型, 仅能决定颜色, 无额外作用, 可选值有: `primary、info、success、warning、danger`   |
+|  readonly  |   Boolean  | false   |  选项的只读状态, 为true时, 点击无效 |
+|  disbaled  |   Boolean  | false   |  选项的禁用状态, 为true时, 点击无效 |
 |  value  |   String  |  无   |  单选框的实际值(非显示内容), 该值不随选中状态而变化 |
 |  checked  |   Boolean  |  false   |  单选框的选中状态。 |
 

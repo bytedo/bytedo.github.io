@@ -78,7 +78,7 @@
 
 |  属性  |  值类型  |   默认值   |     描述   |
 |  :-:  |   :-:   |   :-:   |     -   |
-|  type  |  String  |   无   |   按钮类型, 仅能决定按钮的颜色, 别额外作用, 可选值有: primary、info、success、warning、default、inverse、danger。 不设置时,继承父级的颜色定义   |
+|  type  |  String  |   无   |   按钮类型, 仅能决定按钮的颜色, 无额外作用, 可选值有: primary、info、success、warning、default、inverse、danger。 不设置时,继承父级的颜色定义   |
 |  underline  |   无  |  无   |  设置是否一直显示下划线 |
 |  disbaled  |   Boolean  | false   |  按钮的禁用状态, 为true时, 按钮点击事件无效 |
 |  autofocus  |   无  |  无   |  让按钮自动获得焦点。 不需要赋值   |

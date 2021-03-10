@@ -14,14 +14,19 @@ import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/markd/index.js'
 
 // 支持对中文的base64编码
 function base64(str) {
-  return window.btoa(unescape(encodeURIComponent(str)))
+  return window
+    .btoa(unescape(encodeURIComponent(str)))
+    .replace(/\+/g, '-')
+    .replace(/\//g, '_')
+    .replace(/=/g, '')
 }
 
 function base64decode(str) {
   return decodeURIComponent(escape(window.atob(str)))
+    .replace(/-/g, '+')
+    .replace(/_/g, '/')
+    .replace(/[^A-Za-z0-9\+\/]/g, '')
 }
-
-window.base64 = base64
 
 Anot({
   $id: 'doc',

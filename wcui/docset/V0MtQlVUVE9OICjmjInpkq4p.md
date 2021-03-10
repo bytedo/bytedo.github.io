@@ -105,7 +105,7 @@
 
 |  属性  |  值类型  |   默认值   |     描述   |
 |  :-:  |   :-:   |   :-:   |     -   |
-|  type  |  String  |   无   |   按钮类型, 仅能决定按钮的颜色, 别额外作用, 可选值有: primary、info、success、warning、default、inverse、danger   |
+|  type  |  String  |   无   |   按钮类型, 仅能决定按钮的颜色, 无额外作用, 可选值有: primary、info、success、warning、default、inverse、danger   |
 |  size  |   String   |  default   |   按钮尺寸, 可选值有: large、medium、small、mini   |
 |  loading  |   Boolean  | false   |  按钮的加载状态, 为true时, 按钮会呈现loading动画, 且按钮点击事件无效 |
 |  disbaled  |   Boolean  | false   |  按钮的禁用状态, 为true时, 按钮点击事件无效 |

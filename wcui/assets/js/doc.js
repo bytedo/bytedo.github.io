@@ -9,6 +9,7 @@ import fetch from '//unpkg.yutent.top/@bytedo/fetch/dist/next.js'
 import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/color/index.js'
 import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/form/index.js'
 import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/markd/index.js'
+import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/progress/index.js'
 // import '//dist.bytedo.org/wcui/dist/form/index.js'
 // import '//dist.bytedo.org/wcui/dist/markd/index.js'
 
@@ -27,6 +28,7 @@ function base64decode(str) {
     .replace(/_/g, '/')
     .replace(/[^A-Za-z0-9\+\/]/g, '')
 }
+window.base64 = base64
 
 Anot({
   $id: 'doc',
@@ -37,22 +39,26 @@ Anot({
       name
     })),
     formWC: [
-      'WC-BUTTON (按钮)',
-      'WC-LINK (超连接)',
-      'WC-INPUT (文本框)',
-      'WC-NUMBER (数字文本框)',
-      'WC-TEXTAREA (文本域)',
-      'WC-SELECT (选择框)',
-      'WC-SWITCH (开关)',
-      'WC-RADIO (单选框)',
-      'WC-CHECKBOX (复选框)',
-      'WC-STAR (评分条)',
-      'WC-SLIDER (滑块)',
-      'WC-COLOR (取色器)'
-    ].map(name => ({
-      id: base64(name),
-      name
-    })),
+      'Button (按钮)',
+      'Link (超连接)',
+      'Input (文本框)',
+      'Number (数字文本框)',
+      'Textarea (文本域)',
+      'Select (选择框)',
+      'Switch (开关)',
+      'Radio (单选框)',
+      'Checkbox (复选框)',
+      'Star (评分条)',
+      'Slider (滑块)',
+      'Color (取色器)'
+    ].map(name => ({ id: base64(name), name })),
+    dataWC: [
+      'Progress (进度条)',
+      'Table (表格)',
+      'Tree (树形菜单)',
+      'Pager (分页)',
+      'SlideDown (下拉菜单)'
+    ].map(name => ({ id: base64(name), name })),
     docset: ''
   },
   mounted() {

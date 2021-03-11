@@ -45,6 +45,20 @@
             :href="'?' + it.id" :text="it.name">
           </a>
         </dd>
+        <dt class="title">数据组件</dt>
+        <dd class="subtitle">
+          <a 
+            :for="it in dataWC" 
+            :class="{a: id === it.id}" 
+            :href="'?' + it.id" :text="it.name">
+          </a>
+        </dd>
+        <dt class="title">弹层组件</dt>
+        <dd class="subtitle">
+          <a :class="{a: id === 'TGF5ZXIgKOW8ueWxgik'}" href="?TGF5ZXIgKOW8ueWxgik">
+            Layer (弹层)
+          </a>
+        </dd>
       </dl>
     </wc-scroll>
 

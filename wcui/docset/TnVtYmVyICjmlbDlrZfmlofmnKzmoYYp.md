@@ -55,3 +55,20 @@
   <wc-number placeholder="Readonly Status" readonly></wc-number>
   <wc-number placeholder="Disabled Status" disabled></wc-number>
 </section>
+
+
+### 完整APIs
+
+|  属性  |  值类型  |   默认值   |     描述   |
+|  :-:  |   :-:   |   :-:   |     -   |
+|  type  |  String  |   无   |   文本框类型, 仅能决定颜色, 无额外作用, 可选值有: `primary、info、success、warning、danger`   |
+|  size  |   String   |  default   |   输入框尺寸, 可选值有: `large、medium、small、mini`   |
+|  readonly  |   Boolean  | false   |  输入框的只读状态, 为true时, 无法输入, 但仍能获得焦点  |
+|  disbaled  |   Boolean  | false   |  输入框的禁用状态, 为true时, 无法输入, 也无法获得焦点 |
+|  round  |   无  |  无   |  为输入框设置大圆角半径。 不需要赋值   |
+|  autofocus  |   无  |  无   |  让输入框自动获得焦点。 不需要赋值   |
+|  max  |   Number  |  无   |  可输入的最大值  |
+|  min  |   Number  |  无   |  可输入的最小值  |
+|  step  |   Number  |  1   |  每次点击增加数值, 默认为1  |
+|  value  |   Number  |  0   |  绑定值  |
+|  lazy  |   Number  |  0   |  设置节流防抖, 单位毫秒, 设置一个大于0的值之后, 在指定毫秒之内, 不会重复触发提交  |

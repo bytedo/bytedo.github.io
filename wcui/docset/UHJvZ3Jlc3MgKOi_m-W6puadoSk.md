@@ -93,8 +93,6 @@
 
 ### 完整APIs
 
-`<wc-checkbox>`
-
 |  属性  |  值类型  |   默认值   |     描述   |
 |  :-:  |   :-:   |   :-:   |     -   |
 |  type  |  String  |  无   |   复选框类型, 仅能决定颜色, 无额外作用, 可选值有: `circle, dashboard`   |

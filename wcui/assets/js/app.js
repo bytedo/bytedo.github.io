@@ -6,6 +6,7 @@
 
 import '//unpkg.yutent.top/anot/dist/anot.js'
 import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/form/button.js'
+import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/form/link.js'
 import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/code/index.js'
 
 Anot({

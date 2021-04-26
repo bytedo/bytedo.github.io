@@ -13,31 +13,20 @@ import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/progress/index.js'
 // import '//dist.bytedo.org/wcui/dist/form/index.js'
 // import '//dist.bytedo.org/wcui/dist/markd/index.js'
 
-// 支持对中文的base64编码
-function base64(str) {
-  return window
-    .btoa(unescape(encodeURIComponent(str)))
-    .replace(/\+/g, '-')
-    .replace(/\//g, '_')
-    .replace(/=/g, '')
+function pad(name, prefix = 'wc-') {
+  return prefix + name.toLowerCase().replace(/[^\w]/g, '')
 }
-
-function base64decode(str) {
-  return decodeURIComponent(escape(window.atob(str)))
-    .replace(/-/g, '+')
-    .replace(/_/g, '/')
-    .replace(/[^A-Za-z0-9\+\/]/g, '')
-}
-window.base64 = base64
 
 Anot({
   $id: 'doc',
   state: {
     id: '5pu05paw5pel5b+X',
-    base: ['更新日志', '安装', '配色', '图标'].map(name => ({
-      id: base64(name),
-      name
-    })),
+    base: [
+      { id: 'update-logs', name: '更新日志' },
+      { id: 'install', name: '安装' },
+      { id: 'colors', name: '配色' },
+      { id: 'icons', name: '图标' }
+    ],
     formWC: [
       'Button (按钮)',
       'Link (超连接)',
@@ -51,14 +40,14 @@ Anot({
       'Star (评分条)',
       'Slider (滑块)',
       'Color (取色器)'
-    ].map(name => ({ id: base64(name), name })),
+    ].map(name => ({ id: pad(name), name })),
     dataWC: [
       'Progress (进度条)',
       'Table (表格)',
       'Tree (树形菜单)',
       'Pager (分页)',
       'SlideDown (下拉菜单)'
-    ].map(name => ({ id: base64(name), name })),
+    ].map(name => ({ id: pad(name), name })),
     docset: ''
   },
   mounted() {

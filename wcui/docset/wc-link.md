@@ -13,7 +13,7 @@
 </section>
 <section class="flex-free">
   <wc-link>Normal</wc-link>
-  <wc-link type="default">Default</wc-link>
+  <wc-link type="help">Help</wc-link>
   <wc-link type="inverse">Inverse</wc-link>
   <wc-link type="danger">Danger</wc-link>
 </section>

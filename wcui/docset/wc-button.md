@@ -13,7 +13,7 @@
 </section>
 <section class="flex">
   <wc-button>Normal Button</wc-button>
-  <wc-button type="default">Default Button</wc-button>
+  <wc-button type="help">Help Button</wc-button>
   <wc-button type="inverse">Inverse Button</wc-button>
   <wc-button type="danger">Danger Button</wc-button>
 </section>

@@ -1,23 +1,23 @@
-## 单行文本框
-> 常用的单行文本框, 支持自动补全等特性。
+## 密码框
+> 常用的密码文本框。
 
 
 ### 基础用法
 <style>.flex,.flex-free { display:flex;align-items:center } .flex > *,.flex-free > *{margin:0 16px}.flex > *{flex:1}.s16{--size:16px}</style>
 
 ```html
-<wc-input></wc-input>
+<wc-passwd></wc-passwd>
 ```
 
 <section class="flex">
-  <wc-input placeholder="Default"></wc-input>
-  <wc-input placeholder="type=primary" type="primary"></wc-input>
-  <wc-input placeholder="type=info" type="info"></wc-input>
+  <wc-passwd placeholder="Default"></wc-passwd>
+  <wc-passwd placeholder="type=primary" type="primary"></wc-passwd>
+  <wc-passwd placeholder="type=info" type="info"></wc-passwd>
 </section>
 <section class="flex">
-  <wc-input placeholder="type=success" type="success"></wc-input>
-  <wc-input placeholder="type=warning" type="warning"></wc-input>
-  <wc-input placeholder="type=danger" type="danger"></wc-input>
+  <wc-passwd placeholder="type=success" type="success"></wc-passwd>
+  <wc-passwd placeholder="type=warning" type="warning"></wc-passwd>
+  <wc-passwd placeholder="type=danger" type="danger"></wc-passwd>
 </section>
 
 
@@ -25,71 +25,56 @@
 5种尺寸规则的按钮, 如果不满足自己的需求, 可以自行设置`width`和`height`。
 
 ```html
-<wc-input placeholder="Large Size" size="large"></wc-input>
-<wc-input placeholder="Medium Size" size="medium"></wc-input>
-<wc-input placeholder="Deault Size"></wc-input>
-<wc-input placeholder="Small Size" size="small"></wc-input>
-<wc-input placeholder="Mini Size" size="mini"></wc-input>
+<wc-passwd placeholder="Large Size" size="large"></wc-passwd>
+<wc-passwd placeholder="Medium Size" size="medium"></wc-passwd>
+<wc-passwd placeholder="Deault Size"></wc-passwd>
+<wc-passwd placeholder="Small Size" size="small"></wc-passwd>
+<wc-passwd placeholder="Mini Size" size="mini"></wc-passwd>
 ```
 
 <section class="flex">
-  <wc-input placeholder="Large Size" size="large"></wc-input>
-  <wc-input placeholder="Medium Size" size="medium"></wc-input>
-  <wc-input placeholder="Deault Size"></wc-input>
-  <wc-input placeholder="Small Size" size="small"></wc-input>
-  <wc-input placeholder="Mini Size" size="mini"></wc-input>
+  <wc-passwd placeholder="Large Size" size="large"></wc-passwd>
+  <wc-passwd placeholder="Medium Size" size="medium"></wc-passwd>
+  <wc-passwd placeholder="Deault Size"></wc-passwd>
+  <wc-passwd placeholder="Small Size" size="small"></wc-passwd>
+  <wc-passwd placeholder="Mini Size" size="mini"></wc-passwd>
 </section>
 
 ### 状态
 按钮有2种状态, `readonly` 和 `disabled`, 这2种状态下, value值都无法被修改。
 
 ```html
-<wc-input placeholder="Normal"></wc-input>
-<wc-input placeholder="Readonly Status" readonly></wc-input>
-<wc-input placeholder="Disabled Status" disabled></wc-input>
+<wc-passwd placeholder="Normal"></wc-passwd>
+<wc-passwd placeholder="Readonly Status" readonly></wc-passwd>
+<wc-passwd placeholder="Disabled Status" disabled></wc-passwd>
 ```
 
 
 <section class="flex">
-  <wc-input placeholder="Normal"></wc-input>
-  <wc-input placeholder="Readonly Status" readonly></wc-input>
-  <wc-input placeholder="Disabled Status" disabled></wc-input>
+  <wc-passwd placeholder="Normal"></wc-passwd>
+  <wc-passwd placeholder="Readonly Status" readonly></wc-passwd>
+  <wc-passwd placeholder="Disabled Status" disabled></wc-passwd>
 </section>
 
 
-### 图标
-按钮可通过`icon`属性, 增加后置图标, 图标的名字, 参考前面的章节。
-
-```html
-<wc-input icon="mail"></wc-input>
-<wc-input icon="fly"></wc-input>
-<wc-input icon="edit"></wc-input>
-```
-
-
-<section class="flex">
-  <wc-input icon="mail"></wc-input>
-  <wc-input icon="fly"></wc-input>
-  <wc-input icon="edit"></wc-input>
-</section>
 
 ### 特殊属性
 特殊属性`round`, 前者可以控制按钮的圆角半径
 
 ```html
-<wc-input round placeholder="Large Size" size="large"></wc-input>
-<wc-input round placeholder="Medium Size" size="medium"></wc-input>
-<wc-input round placeholder="Deault Size"></wc-input>
-<wc-input round placeholder="Small Size" size="small"></wc-input>
-<wc-input round placeholder="Mini Size" size="mini"></wc-input>
+<wc-passwd round placeholder="Large Size" size="large"></wc-passwd>
+<wc-passwd round placeholder="Medium Size" size="medium"></wc-passwd>
+<wc-passwd round placeholder="Deault Size"></wc-passwd>
+<wc-passwd round placeholder="Small Size" size="small"></wc-passwd>
+<wc-passwd round placeholder="Mini Size" size="mini"></wc-passwd>
 ```
 
-<section class="flex">
-  <wc-input round placeholder="Large Size" size="large"></wc-input>
-  <wc-input round placeholder="Medium Size" size="medium"></wc-input>
-  <wc-input round placeholder="Deault Size"></wc-input>
-  <wc-input round placeholder="Small Size" size="small"></wc-input>
-  <wc-input round placeholder="Mini Size" size="mini"></wc-input>
+<section class="flex-free">
+  <!-- <wc-passwd round placeholder="Large Size" size="large"></wc-passwd> -->
+  <!-- <wc-passwd round placeholder="Medium Size" size="medium"></wc-passwd> -->
+  <wc-passwd round placeholder="Deault Size"></wc-passwd>
+  <wc-passwd round placeholder="Small Size" size="small"></wc-passwd>
+  <wc-passwd round placeholder="Mini Size" size="mini"></wc-passwd>
 </section>
 
 
@@ -106,46 +91,46 @@
 > `注意:`, 同一个位置的插槽, 只能有1个, 多出来的会被移除。
 
 ```html
-<wc-input>
+<wc-passwd>
   <span slot="prepend">账号</span>
-</wc-input>
-<wc-input>
+</wc-passwd>
+<wc-passwd>
 <span slot="append">@163.com</span>
-</wc-input>
-<wc-input>
+</wc-passwd>
+<wc-passwd>
   <wc-icon slot="prepend" style="--size:16px" is="user"></wc-icon>
-</wc-input>
+</wc-passwd>
 
-<wc-input>
+<wc-passwd>
   <span slot="prepend">账号</span>
   <span slot="append">@163.com</span>
-</wc-input>
-<wc-input round>
+</wc-passwd>
+<wc-passwd round>
   <wc-icon style="--size:16px" slot="prepend" is="user"></wc-icon>
-</wc-input>
+</wc-passwd>
 
 ```
 
 <section class="flex">
-  <wc-input>
+  <wc-passwd>
     <span slot="prepend">账号</span>
-  </wc-input>
-  <wc-input>
+  </wc-passwd>
+  <wc-passwd>
   <span slot="append">@163.com</span>
-  </wc-input>
-  <wc-input>
+  </wc-passwd>
+  <wc-passwd>
     <wc-icon slot="prepend" class="s16" is="user"></wc-icon>
-  </wc-input>
+  </wc-passwd>
 </section>
 
 <section class="flex">
-  <wc-input>
+  <wc-passwd>
     <span slot="prepend">账号</span>
     <span slot="append">@163.com</span>
-  </wc-input>
-  <wc-input round>
+  </wc-passwd>
+  <wc-passwd round>
     <wc-icon class="s16" slot="prepend" is="user"></wc-icon>
-  </wc-input>
+  </wc-passwd>
 </section>
 
 
@@ -154,7 +139,7 @@
 
 ```html
 
-<wc-input @fetch-suggest="suggest"></wc-input>
+<wc-passwd @fetch-suggest="suggest"></wc-passwd>
 
 <script>
 // 此处省略其他如数据绑定等代码, 自行根据各自的框架修改

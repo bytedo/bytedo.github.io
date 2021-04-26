@@ -7,11 +7,11 @@
 import '//unpkg.yutent.top/anot/dist/anot.js'
 import fetch from '//unpkg.yutent.top/@bytedo/fetch/dist/next.js'
 import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/color/index.js'
-import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/form/index.js'
-import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/markd/index.js'
+// import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/form/index.js'
+// import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/markd/index.js'
 import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/progress/index.js'
-// import '//dist.bytedo.org/wcui/dist/form/index.js'
-// import '//dist.bytedo.org/wcui/dist/markd/index.js'
+import '//dist.bytedo.org/wcui/dist/form/index.js'
+import '//dist.bytedo.org/wcui/dist/markd/index.js'
 
 function pad(name, prefix = 'wc-') {
   return prefix + name.toLowerCase().replace(/[^\w]/g, '')
@@ -31,6 +31,7 @@ Anot({
       'Button (按钮)',
       'Link (超连接)',
       'Input (文本框)',
+      'Passwd (密码框)',
       'Number (数字文本框)',
       'Textarea (文本域)',
       'Select (选择框)',

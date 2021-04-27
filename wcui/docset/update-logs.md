@@ -1,3 +1,16 @@
+### daily-build (2021-04-27)
++ 优化meditor, 部分逻辑重构; 支持括号、引号自动匹配。
++ 优化单选/复选框的样式及交互
++ 优化分页组件样式; 修复总条目为0时分页出错的bug;
++ 优化markdown表格和行内代码的样式
++ 优化代码块, 优化配色正则
++ 修复readonly/disabled属性设置
++ 新增(wc-dropdown)组件
++ 新增(wc-textarea)组件
++ 新增(wc-passwd)组件
+
+
+
 ### daily-build (2021-03-10)
 + 单行文本框(wc-input)的重构
 + 单选框(wc-radio)重构

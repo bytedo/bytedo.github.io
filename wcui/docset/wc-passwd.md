@@ -70,8 +70,8 @@
 ```
 
 <section class="flex-free">
-  <!-- <wc-passwd round placeholder="Large Size" size="large"></wc-passwd> -->
-  <!-- <wc-passwd round placeholder="Medium Size" size="medium"></wc-passwd> -->
+  <wc-passwd round placeholder="Large Size" size="large"></wc-passwd>
+  <wc-passwd round placeholder="Medium Size" size="medium"></wc-passwd>
   <wc-passwd round placeholder="Deault Size"></wc-passwd>
   <wc-passwd round placeholder="Small Size" size="small"></wc-passwd>
   <wc-passwd round placeholder="Mini Size" size="mini"></wc-passwd>
@@ -135,29 +135,6 @@
 
 
 
-### 补全示例
-
-```html
-
-<wc-passwd @fetch-suggest="suggest"></wc-passwd>
-
-<script>
-// 此处省略其他如数据绑定等代码, 自行根据各自的框架修改
-
-export default {
-  methods: {
-    suggest(ev) {
-      var { value, send } = ev.detail
-      // 这里省略条件判断
-      if (/...some condition.../) {
-        // 这里需要发送一个列表, 列表中的选项, 必须要有一个value字段, 其他字段随意, 自行根据需要选择是否发送。
-        send([{ value: 'foo', ... }, { value: 'bar', ... }])
-      }
-    }
-  }
-}
-</script>
-```
 
 
 
@@ -183,6 +160,5 @@ export default {
 ### 事件
 |  事件名  |  描述  |     回调参数   |   补充说明   |
 |  :-:  |   -   |   -   |     -   |
-|  @submit  |  按下`回车键`时触发  |  无  |  受`lazy`属性的制约; 有补全下拉选项时, 不会触发  |
-|  @fetch-suggest  |  输入时触发  |  形参中`event.detail`有2个属性, 当前值`value`和`send`方法, 需要自行发送一个列表  |  受`lazy`属性的制约; 密码框不会触发 |
-|  @select  |  有补全列表时, 且选中其中一个选项时触发  |  形参`event.detail`返回当前选中的值  |   无   |
+|  @submit  |  按下`回车键`时触发  |  无  |  受`lazy`属性的制约  |
+

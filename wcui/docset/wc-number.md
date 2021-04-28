@@ -1,9 +1,15 @@
+<style>
+.flex,.flex-free { display:flex;align-items:center;margin-top:16px }
+.flex > *,.flex-free > *{margin:0 16px}
+.flex > *{flex:1}
+</style>
+
+
 ## 数字文本框
 > 在单行文本框的基础上简化而来, 增加数字输入的特性。
 
 
 ### 基础用法
-<style>.flex,.flex-free { display:flex;align-items:center } .flex > *,.flex-free > *{margin:0 16px}.flex > *{flex:1}.s16{--size:16px}</style>
 
 ```html
 <wc-number></wc-number>

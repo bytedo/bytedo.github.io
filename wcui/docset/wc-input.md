@@ -1,9 +1,14 @@
+<style>
+.flex,.flex-free { display:flex;align-items:center;margin-top:16px }
+.flex > *,.flex-free > *{margin:0 16px}
+.flex > *{flex:1}
+</style>
+
 ## 单行文本框
 > 常用的单行文本框, 支持自动补全等特性。
 
 
 ### 基础用法
-<style>.flex,.flex-free { display:flex;align-items:center } .flex > *,.flex-free > *{margin:0 16px}.flex > *{flex:1}.s16{--size:16px}</style>
 
 ```html
 <wc-input></wc-input>
@@ -134,7 +139,7 @@
   <span slot="append">@163.com</span>
   </wc-input>
   <wc-input>
-    <wc-icon slot="prepend" class="s16" is="user"></wc-icon>
+    <wc-icon slot="prepend" style="--size:16px" is="user"></wc-icon>
   </wc-input>
 </section>
 
@@ -144,7 +149,7 @@
     <span slot="append">@163.com</span>
   </wc-input>
   <wc-input round>
-    <wc-icon class="s16" slot="prepend" is="user"></wc-icon>
+    <wc-icon style="--size:16px" slot="prepend" is="user"></wc-icon>
   </wc-input>
 </section>
 

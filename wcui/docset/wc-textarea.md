@@ -1,9 +1,14 @@
+<style>
+.flex,.flex-free { display:flex;align-items:center;margin-top:16px }
+.flex > *,.flex-free > *{margin:0 16px}
+.flex > *{flex:1}
+</style>
+
 ## 多行文本框
 > 常用的单行文本框, 支持自动补全等特性。
 
 
 ### 基础用法
-<style>.flex,.flex-free { display:flex;align-items:center } .flex > *,.flex-free > *{margin:0 16px}.flex > *{flex:1}.s16{--size:16px}</style>
 
 ```html
 <wc-textarea></wc-textarea>

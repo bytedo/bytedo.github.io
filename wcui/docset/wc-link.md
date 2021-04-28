@@ -1,9 +1,14 @@
+<style>
+.flex,.flex-free { display:flex;align-items:center;margin-top:16px }
+.flex > *,.flex-free > *{margin:0 16px}
+.flex > *{flex:1}
+</style>
+
 ## WC-LINK
 > 超链接按钮, 可代替原生A标签。
 
 
 ### 基础用法
-<style>.flex,.flex-free { display:flex;align-items:center } .flex > *,.flex-free > *{margin:0 16px}.flex > *{flex:1}</style>
 
 <section class="flex-free">
   <wc-link type="primary">Primary</wc-link>

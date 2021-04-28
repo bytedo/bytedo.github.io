@@ -1,9 +1,15 @@
+<style>
+.flex,.flex-free { display:flex;align-items:center;margin-top:16px }
+.flex > *,.flex-free > *{margin:0 16px}
+.flex > *{flex:1}
+</style>
+
+
 ## 密码框
 > 常用的密码文本框。
 
 
 ### 基础用法
-<style>.flex,.flex-free { display:flex;align-items:center } .flex > *,.flex-free > *{margin:0 16px}.flex > *{flex:1}.s16{--size:16px}</style>
 
 ```html
 <wc-passwd></wc-passwd>
@@ -119,7 +125,7 @@
   <span slot="append">@163.com</span>
   </wc-passwd>
   <wc-passwd>
-    <wc-icon slot="prepend" class="s16" is="user"></wc-icon>
+    <wc-icon slot="prepend" style="--size:16px" is="user"></wc-icon>
   </wc-passwd>
 </section>
 
@@ -129,7 +135,7 @@
     <span slot="append">@163.com</span>
   </wc-passwd>
   <wc-passwd round>
-    <wc-icon class="s16" slot="prepend" is="user"></wc-icon>
+    <wc-icon style="--size:16px" slot="prepend" is="user"></wc-icon>
   </wc-passwd>
 </section>
 

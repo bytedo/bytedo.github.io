@@ -1,9 +1,14 @@
+<style>
+.flex,.flex-free { display:flex;align-items:center;margin-top:16px }
+.flex > *,.flex-free > *{margin:0 16px}
+.flex > *{flex:1}
+</style>
+
 ## WC-BUTTON
 > 常用的按钮组件。
 
 
 ### 基础用法
-<style>.flex,.flex-free { display:flex;align-items:center } .flex > *,.flex-free > *{margin:0 16px}.flex > *{flex:1}</style>
 
 <section class="flex">
   <wc-button type="primary">Primary Button</wc-button>

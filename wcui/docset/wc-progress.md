@@ -1,9 +1,18 @@
-### Progress 进度条
+<style>
+.flex,.flex-free { display:flex;align-items:center;margin-top:16px  }
+.flex > *,.flex-free > *{margin:0 16px}
+.flex > *{flex:1}
+.w80 {width:80px;}
+.w160 {width:160px;}
+.wh80 {width:80px;height:80px}
+.wh120 {width:120px;height:120px}
+</style>
+
+### WC-PROGRESS 进度条
 > 用于展示操作进度，告知用户当前状态和预期。
 
 
 ### 基础用法
-<style>.flex,.flex-free { display:flex;align-items:center } .flex > *,.flex-free > *{margin:0 16px}.flex > *{flex:1}.w80 {width:80px;}.w160 {width:160px;}.wh80 {width:80px;height:80px}.wh120 {width:120px;height:120px}</style>
 
 ```html
 <wc-progress value="10"></wc-progress>

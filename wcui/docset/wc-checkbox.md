@@ -1,9 +1,14 @@
+<style>
+.flex,.flex-free { display:flex;align-items:center;margin-top:16px }
+.flex > *,.flex-free > *{margin:0 16px}
+.flex > *{flex:1}
+</style>
+
 ## 多选框
 > 常用的多选按钮(组)。
 
 
 ### 基础用法
-<style>.flex,.flex-free { display:flex;align-items:center } .flex > *,.flex-free > *{margin:0 16px}.flex > *{flex:1}</style>
 
 ```html
 <wc-checkbox>Default checkbox</wc-checkbox>

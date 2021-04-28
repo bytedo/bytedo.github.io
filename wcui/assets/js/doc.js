@@ -7,11 +7,13 @@
 import '//unpkg.yutent.top/anot/dist/anot.js'
 import fetch from '//unpkg.yutent.top/@bytedo/fetch/dist/next.js'
 import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/color/index.js'
-// import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/form/index.js'
-// import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/markd/index.js'
+import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/form/index.js'
+import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/markd/index.js'
+import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/pager/index.js'
 import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/progress/index.js'
-import '//dist.bytedo.org/wcui/dist/form/index.js'
-import '//dist.bytedo.org/wcui/dist/markd/index.js'
+// import '//dist.bytedo.org/wcui/dist/form/index.js'
+// import '//dist.bytedo.org/wcui/dist/markd/index.js'
+// import '//dist.bytedo.org/wcui/dist/pager/index.js'
 
 function pad(name, prefix = 'wc-') {
   return prefix + name.toLowerCase().replace(/[^\w]/g, '')

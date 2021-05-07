@@ -10,7 +10,7 @@ import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/index.js'
 // import '//dist.bytedo.org/wcui/dist/index.js'
 
 function pad(name, prefix = 'wc-') {
-  return prefix + name.toLowerCase().replace(/[^\w]/g, '')
+  return prefix + name.toLowerCase().split(' ')[0]
 }
 
 Anot({
@@ -43,12 +43,18 @@ Anot({
       'Table (表格)',
       'Tree (树形菜单)',
       'Pager (分页)',
-      'SlideDown (下拉菜单)'
+      'DropDown (下拉菜单)'
+    ].map(name => ({ id: pad(name), name })),
+    otherWC: [
+      'Layer (弹层)',
+      'Scroll (滚动条)',
+      'Markd (Markdown解析器)',
+      'Badge (标记)'
     ].map(name => ({ id: pad(name), name })),
     docset: ''
   },
   mounted() {
-    var id = location.search.slice(1) || '5pu05paw5pel5b+X'
+    var id = location.search.slice(1) || 'update-logs'
 
     this.id = id
     this.loadDoc(id)

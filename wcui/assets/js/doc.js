@@ -48,7 +48,7 @@ Anot({
     otherWC: [
       'Layer (弹层)',
       'Scroll (滚动条)',
-      'Markd (Markdown解析器)',
+      'Markd (MarkDown解析器)',
       'Badge (标记)'
     ].map(name => ({ id: pad(name), name })),
     docset: ''

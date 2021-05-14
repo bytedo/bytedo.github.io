@@ -6,8 +6,8 @@
 
 import '//unpkg.yutent.top/anot/dist/anot.js'
 import fetch from '//unpkg.yutent.top/@bytedo/fetch/dist/next.js'
-// import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/index.js'
-import '//dist.bytedo.org/wcui/dist/index.js'
+import '//unpkg-dev.yutent.top/@bytedo/wcui/dist/index.js'
+// import '//dist.bytedo.org/wcui/dist/index.js'
 
 function pad(name, prefix = 'wc-') {
   return prefix + name.toLowerCase().split(' ')[0]

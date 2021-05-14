@@ -78,7 +78,7 @@ a {
 
   .banner {
     height: 400px;
-    background:linear-gradient(to right bottom,#155799,#157879,#159857);
+    background: linear-gradient(to right bottom, #155799, #157879, #159857);
 
     .wrapper {
       flex-direction: column;
@@ -131,97 +131,138 @@ a {
 
         ul {
           flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
         }
         li {
-          height: 42px;
+          height: 56px;
+          box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.03);
+        }
+
+        ul:nth-child(2),
+        ul:nth-child(5) {
+          li {
+            height: 48px;
+          }
+        }
+        ul:nth-child(3),
+        ul:nth-child(7) {
+          li {
+            height: 52px;
+          }
         }
       }
 
       .blue {
         li:nth-child(1) {
-          background: var(--color-blue-1);
+          background: var(--color-blue-a);
         }
         li:nth-child(2) {
-          background: var(--color-blue-2);
+          background: var(--color-blue-1);
         }
         li:nth-child(3) {
+          background: var(--color-blue-2);
+        }
+        li:nth-child(4) {
           background: var(--color-blue-3);
         }
       }
       .teal {
         li:nth-child(1) {
-          background: var(--color-teal-1);
+          background: var(--color-teal-a);
         }
         li:nth-child(2) {
-          background: var(--color-teal-2);
+          background: var(--color-teal-1);
         }
         li:nth-child(3) {
+          background: var(--color-teal-2);
+        }
+        li:nth-child(4) {
           background: var(--color-teal-3);
         }
       }
       .green {
         li:nth-child(1) {
-          background: var(--color-green-1);
+          background: var(--color-green-a);
         }
         li:nth-child(2) {
-          background: var(--color-green-2);
+          background: var(--color-green-1);
         }
         li:nth-child(3) {
+          background: var(--color-green-2);
+        }
+        li:nth-child(4) {
           background: var(--color-green-3);
         }
       }
       .red {
         li:nth-child(1) {
-          background: var(--color-red-1);
+          background: var(--color-red-a);
         }
         li:nth-child(2) {
-          background: var(--color-red-2);
+          background: var(--color-red-1);
         }
         li:nth-child(3) {
+          background: var(--color-red-2);
+        }
+        li:nth-child(4) {
           background: var(--color-red-3);
         }
       }
       .orange {
         li:nth-child(1) {
-          background: var(--color-orange-1);
+          background: var(--color-orange-a);
         }
         li:nth-child(2) {
-          background: var(--color-orange-2);
+          background: var(--color-orange-1);
         }
         li:nth-child(3) {
+          background: var(--color-orange-2);
+        }
+        li:nth-child(4) {
           background: var(--color-orange-3);
         }
       }
       .plain {
         li:nth-child(1) {
-          background: var(--color-plain-1);
+          background: #f7f8fb;
         }
         li:nth-child(2) {
-          background: var(--color-plain-2);
+          background: var(--color-plain-1);
         }
         li:nth-child(3) {
+          background: var(--color-plain-2);
+        }
+        li:nth-child(4) {
           background: var(--color-plain-3);
         }
       }
       .grey {
         li:nth-child(1) {
-          background: var(--color-grey-1);
+          background: var(--color-grey-a);
         }
         li:nth-child(2) {
-          background: var(--color-grey-2);
+          background: var(--color-grey-1);
         }
         li:nth-child(3) {
+          background: var(--color-grey-2);
+        }
+        li:nth-child(4) {
           background: var(--color-grey-3);
         }
       }
       .dark {
         li:nth-child(1) {
-          background: var(--color-dark-1);
+          background: var(--color-dark-a);
         }
         li:nth-child(2) {
-          background: var(--color-dark-2);
+          background: var(--color-dark-1);
         }
         li:nth-child(3) {
+          background: var(--color-dark-2);
+        }
+        li:nth-child(4) {
           background: var(--color-dark-3);
         }
       }

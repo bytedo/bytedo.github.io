@@ -33,6 +33,14 @@ function foo(name = 'world') {
 ### 深色模式
 > 只需要简单的加个`dark属性`, 便可将主题切为深色模式。
 
+```html
+<wc-code lang="js" dark>
+  function foo(name = 'world') {
+    console.log('hello ' + name)
+  }
+</wc-code>
+```
+
 <wc-code lang="js" dark>
 function foo(name = 'world') {
   console.log('hello ' + name)

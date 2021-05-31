@@ -92,21 +92,31 @@ a {
         color: var(--color-grey-1);
 
         .title {
-          font-size: 16px;
           a {
             color: var(--color-dark-1);
           }
         }
         .subtitle {
           padding-left: 28px;
-          color: var(--color-grey-2);
+          color: var(--color-dark-1);
         }
 
         a {
           display: block;
 
+          span {
+            font-weight: bold;
+          }
+          em {
+            font-style: normal;
+            font-size: 14px;
+            color: var(--color-grey-2);
+          }
+
           &:hover,
-          &.a {
+          &:hover em,
+          &.a,
+          &.a em {
             color: var(--color-red-1);
           }
         }

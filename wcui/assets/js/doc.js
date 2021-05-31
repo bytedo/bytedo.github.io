@@ -24,36 +24,36 @@ Anot({
       { id: 'icons', name: '图标' }
     ],
     formWC: [
-      'Button (按钮)',
-      'Link (超连接)',
-      'Input (文本框)',
-      'Passwd (密码框)',
-      'Number (数字文本框)',
-      'Textarea (文本域)',
-      'Select (选择框)',
-      'Switch (开关)',
-      'Radio (单选框)',
-      'Checkbox (复选框)',
-      'Star (评分条)',
-      'Slider (滑块)',
-      'Color (取色器)'
-    ].map(name => ({ id: pad(name), name })),
+      { id: 'wc-button', name: '按钮' },
+      { id: 'wc-link', name: '超连接' },
+      { id: 'wc-input', name: '文本框' },
+      { id: 'wc-passwd', name: '密码框' },
+      { id: 'wc-number', name: '数字文本框' },
+      { id: 'wc-textarea', name: '文本域' },
+      { id: 'wc-select', name: '选择框' },
+      { id: 'wc-switch', name: '开关' },
+      { id: 'wc-radio', name: '单选框' },
+      { id: 'wc-checkbox', name: '复选框' },
+      { id: 'wc-star', name: '评分条' },
+      { id: 'wc-slider', name: '滑块' },
+      { id: 'wc-color', name: '取色器' }
+    ],
     dataWC: [
-      'Progress (进度条)',
-      'Table (表格)',
-      'Tree (树形菜单)',
-      'Pager (分页)',
-      'DropDown (下拉菜单)'
-    ].map(name => ({ id: pad(name), name })),
+      { id: 'wc-progress', name: '进度条' },
+      { id: 'wc-table', name: '表格' },
+      { id: 'wc-tree', name: '树形菜单' },
+      { id: 'wc-pager', name: '分页' },
+      { id: 'wc-dropdown', name: '下拉菜单' }
+    ],
     otherWC: [
-      'Layer (弹层)',
-      'Scroll (滚动条)',
-      'Code (代码块)',
-      'Markd (MarkDown渲染组件)',
-      'MEditor (MarkDown编辑器)',
-      'Editor (富文本编辑器)',
-      'Badge (标记)'
-    ].map(name => ({ id: pad(name), name })),
+      { id: 'wc-layer', name: '弹层' },
+      { id: 'wc-scroll', name: '滚动条' },
+      { id: 'wc-code', name: '代码块' },
+      { id: 'wc-markd', name: 'MD渲染组件' },
+      { id: 'wc-meditor', name: 'MD编辑器' },
+      { id: 'wc-editor', name: '富文本编辑器' },
+      { id: 'wc-badge', name: '标记' }
+    ],
     docset: ''
   },
   mounted() {

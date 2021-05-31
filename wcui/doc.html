@@ -35,7 +35,9 @@
           <a 
             :for="it in base" 
             :class="{a: id === it.id}" 
-            :href="'?' + it.id" :text="it.name">
+            :href="'?' + it.id">
+            <span :text="it.name"></span>
+            <em :text="it.id"></em>
           </a>
         </dt>
         <dt class="title">表单组件</dt>
@@ -44,7 +46,9 @@
             class="text-ell"
             :for="it in formWC" 
             :class="{a: id === it.id}" 
-            :href="'?' + it.id" :text="it.name">
+            :href="'?' + it.id">
+            <span :text="it.name"></span>
+            <em :text="it.id"></em>
           </a>
         </dd>
         <dt class="title">数据组件</dt>
@@ -53,7 +57,9 @@
             class="text-ell"
             :for="it in dataWC" 
             :class="{a: id === it.id}" 
-            :href="'?' + it.id" :text="it.name">
+            :href="'?' + it.id">
+            <span :text="it.name"></span>
+            <em :text="it.id"></em>
           </a>
         </dd>
         <dt class="title">其他组件</dt>
@@ -62,7 +68,9 @@
             class="text-ell"
             :for="it in otherWC" 
             :class="{a: id === it.id}" 
-            :href="'?' + it.id" :text="it.name">
+            :href="'?' + it.id">
+            <span :text="it.name"></span>
+            <em :text="it.id"></em>
           </a>
         </dd>
       </dl>
